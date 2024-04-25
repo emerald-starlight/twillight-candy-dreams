@@ -1,0 +1,6 @@
+<div class="settings-panel">
+    <input type="number" [(ngModel)]="count" placeholder="Number of Stars">
+    <input type="color" [(ngModel)]="color" placeholder="Color of Stars">
+    <input type="number" [(ngModel)]="size" placeholder="Size of Stars">
+    <button (click)="updateSky(count, color, size)">Update Settings</button>
+  </div>
