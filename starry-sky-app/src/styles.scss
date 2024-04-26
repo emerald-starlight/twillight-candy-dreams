@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      150deg,
+      white,
+      beige,
+      rgb(245, 149, 171),
+      rgb(29, 29, 243)
+    );
+    opacity: 0.1;
+    border-radius: 80%;
+    width: 10px;
+    max-height: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    opacity: 0.1;
+  }
+
+  /////////////////////
+  /// 
+  /// 
+// Define base sizes and variability using CSS variables
+:root {
+    --base-size: 5px; // Base size of sparkles
+    --size-variation: 10px; // Maximum size variation
+    --animation-duration-base: 8s; // Base duration for animations
+    --animation-duration-variation: 5s; // Variation in duration
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: calc(var(--base-size) + var(--size-variation) * (var(--random-factor, 0.5)));
+    height: calc(var(--base-size) + var(--size-variation) * (var(--random-factor, 0.5)));
+    border-radius: 50%;
+    background-color: skyblue;
+    animation-name: twinkle;
+    animation-duration: calc(var(--animation-duration-base) + var(--animation-duration-variation) * (var(--random-factor, 0.5)));
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  
+    &:nth-child(odd) {
+      --random-factor: 0.3; // Slightly smaller and faster
+    }
+  
+    &:nth-child(even) {
+      --random-factor: 0.7; // Slightly larger and slower
+    }
+  
+    &:nth-child(3n) {
+      background-color: red; // Every third sparkle is red
+    }
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  

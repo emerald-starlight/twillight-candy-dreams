@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
+import { SparkleComponent } from '../sparkle/sparkle.component';
+// import { trigger, state, style, animate, transition } from '@angular/animations';
+// import { BrowserAnimationsModule } from '@/angular/platform-browser/animations';
+import { NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-sky',
   standalone: true,
-  imports: [],
+  imports: [ NgFor, SparkleComponent,],
   templateUrl: './sky.component.html',
-  styleUrl: './sky.component.scss'
+  styleUrl: './sky.component.scss',
 })
 export class SkyComponent {
   sparkles: any[] = [];
@@ -30,8 +35,10 @@ export class SkyComponent {
       height: `${size}px`,
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
-      backgroundColor: 'skyblue', // Default color, customizable
-      animation: `twinkle ${animationDuration}s infinite`
+      backgroundColor: 'skyblue', 
+
+      animation: `twinkle ${animationDuration}s infinite ease-in-out`
     };
   }
+  
 }
