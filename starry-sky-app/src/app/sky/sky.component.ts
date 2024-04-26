@@ -35,8 +35,6 @@ export class SkyComponent {
       height: `${size}px`,
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
-      backgroundColor: 'skyblue', 
-
       animation: `twinkle ${animationDuration}s infinite ease-in-out`
     };
   }

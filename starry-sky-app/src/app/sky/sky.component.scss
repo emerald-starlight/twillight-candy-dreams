@@ -1,17 +1,2 @@
-/* sky.component.scss */
-@keyframes twinkle {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-  }
-  
-  .sparkle {
-    position: absolute;
-    border-radius: 50%;
-    // Apply animation defined
-    animation: twinkle infinite ease-in-out;
-  }
-  
+// /* sky.component.scss */
+@import '/workspaces/twillight-candy-dreams/starry-sky-app/src/styles.scss'; //
