@@ -1,4 +1,4 @@
-import { animate, style, transition, trigger } from '@angular/animations';
+// import { animate, style, transition, trigger } from '@angular/animations';
 import {  NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
