@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SettingsComponent } from './settings/settings.component';
 import { ThemeService } from './theme.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { ThemeService } from './theme.service';
   imports: [
     // BrowserAnimationsModule, 
     RouterModule,
+    CommonModule,
     SettingsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

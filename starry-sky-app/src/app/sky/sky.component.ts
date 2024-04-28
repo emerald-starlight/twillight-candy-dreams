@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SparkleComponent } from '../sparkle/sparkle.component';
 // import { trigger, state, style, animate, transition } from '@angular/animations';
 // import { BrowserAnimationsModule } from '@/angular/platform-browser/animations';
@@ -13,12 +13,15 @@ import { NgFor } from '@angular/common';
   styleUrl: './sky.component.scss',
 })
 export class SkyComponent {
+  // default or input
+  @Input() count = 100;
+  
   sparkles: any[] = [];
-
+  
   constructor() { }
 
   ngOnInit(): void {
-    this.generateSparkles(200);
+    this.generateSparkles(this.count);
   }
 
   generateSparkles(count: number): void {

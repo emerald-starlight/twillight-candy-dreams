@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class ContentService {
 
   constructor() { }
+
+  //load content from the server as async observer array
+  
+
 }

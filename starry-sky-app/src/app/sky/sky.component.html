@@ -1,3 +1,7 @@
 <div class="sparkle-container">
-    <app-sparkle twinkle *ngFor="let style of sparkles" [style]="style"></app-sparkle>
+    <app-sparkle twinkle *ngFor="let style of sparkles" [style]="style">
+    </app-sparkle>
+    <div class="content">
+        <ng-content ></ng-content>
+    </div>
 </div>

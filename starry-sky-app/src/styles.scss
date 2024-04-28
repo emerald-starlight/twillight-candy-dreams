@@ -76,7 +76,7 @@ body {
   
   ::-webkit-scrollbar-thumb {
     background: linear-gradient(
-      150deg,
+      45deg,
       white,
       beige,
       rgb(245, 149, 171),
@@ -130,3 +130,13 @@ body {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
+
+
+  @font-face {
+    font-family: 'indie-flower-regular';
+    src: url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Micro+5+Charted&display=swap') 
+  }
+  
+p {
+  font-family: 'indie-flower-regular';
+}

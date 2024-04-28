@@ -1,0 +1,35 @@
+
+:host {
+  position: absolute;
+  z-index: 1;
+  width: 97vw;
+  text-align: justify;
+}
+  
+
+article {
+  width: 60vw;
+  margin-left: 20vw;
+}
+
+h1,
+h2,
+p {
+
+  line-height: 1.25;
+  line-gap-override: 2;
+  opacity: 0.75;
+  letter-spacing: 1.2px;
+  font-size: medium;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 15vh;
+}
