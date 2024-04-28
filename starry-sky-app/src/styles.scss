@@ -27,7 +27,7 @@ $body-font-color:#333;
       --gray-700: oklch(36.98% 0.014 302.71);
       --gray-400: oklch(70.9% 0.015 304.04);
       --body-background-color: antiquewhite;
-  
+      font-family: "Architects Daughter", cursive;
       // body {
       //   background-color: #fff;
       //   color: #333;
@@ -132,10 +132,7 @@ body {
   }
 
 
-  @font-face {
-    font-family: 'indie-flower-regular';
-    src: url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Micro+5+Charted&display=swap') 
-  }
+
   
 p {
   font-family: 'indie-flower-regular';
