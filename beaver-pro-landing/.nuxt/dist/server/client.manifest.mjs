@@ -1,0 +1,1 @@
+export { default } from "file:///workspaces/twillight-candy-dreams/beaver-pro-landing/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
